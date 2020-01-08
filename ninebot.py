@@ -1,6 +1,5 @@
 import discord
 import datetime
-import openpyxl
 client = discord.Client()
 
 @client.event
@@ -33,4 +32,4 @@ async def on_message(message):
         await author.send(msg)
         await message.channel.send("전송이 완료됬습니다!")
 
-client.run("NjYzMzQ4MzgwMzk5MDQyNTgw.XhHN9Q.vnkGNwgyPxUCt1P2E5rYVXqGcrk")
+client.run("NjYzMzQ4MzgwMzk5MDQyNTgw.XhVQTQ.eNNlp6-jgPgx1-DL85oIDy8KUyA")

@@ -1,5 +1,6 @@
 import discord
 import datetime
+import os
 client = discord.Client()
 
 @client.event
@@ -31,5 +32,7 @@ async def on_message(message):
         msg = message.content[23:]
         await author.send(msg)
         await message.channel.send("전송이 완료됬습니다!")
+        
 
-client.run("NjYzMzQ4MzgwMzk5MDQyNTgw.XhVQTQ.eNNlp6-jgPgx1-DL85oIDy8KUyA")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
